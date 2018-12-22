@@ -2,26 +2,6 @@ from functools import wraps
 
 import os
 
-"""
-TEMPLET
-from functools import wraps
-#import functools
-
-def decorator(func):
-    @wraps(func)
-    #@functools.wraps(func)
-    def wrapper_decorator(*args, **kwargs):
-        # Do something before
-        value = func(*args, **kwargs)
-        # Do something after
-        return value
-    return wrapper_decorator
-
-# decorators
-#  - http://www.posemaniacs.com/archives/1551
-"""
-
-
 def clear():
     os.system("cls")
 
