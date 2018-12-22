@@ -1,1 +1,1 @@
-# myModule
+myModule
