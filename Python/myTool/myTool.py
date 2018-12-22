@@ -194,15 +194,6 @@ def REPL():
         # print(eval(userInput))
         exec(userInput)
 
-        # except SyntaxError:
-        #     exec(userInput)
-
-
-def clr():
-    """to clear shell, this prints a bunch of lines"""
-    print("\n" * 30)
-    print("\n" * 30)
-
 
 def autoRepr(obj):
     """automatic repr
@@ -215,80 +206,4 @@ def autoRepr(obj):
         return f"{obj.__class__.__name__}({', '.join(items)})"
     except AttributeError:
         return repr(obj)
-
-# JUNK
-# -----------------------------------------------
-# CorrectIntStr() takes a number in string format
-# ..and returns it as integer in the given range.
-
-# def CurrentDate(sep = "/" , in_num = true):
-#     pass
-#     from datetime import datetime
-#     today()
-#   const MONTHS = ["January", "February", "March", "Apirl", "May", "June", "July", "August", "September", "October", "November", "December"];
-#   const WEEKDAYS = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
-
-#   var year = DATE.getFullYear(),
-#       month = DATE.getMonth(),
-#       day = DATE.getDate(),
-#       weekday = DATE.getDay();
-
-#   var currentDate = "";
-
-#   if(in_num){
-#     month++;
-#     if (month<10) month = "0" + month;
-#     if (day<10) day = "0" + day;
-#     currentDate = year + sep + month + sep + day;
-#   }
-
-#   else{
-#     currentDate = year + " " + MONTHS[month] + " "  + day + " "  + WEEKDAYS[weekday];
-#   }
-#   return currentDate;
-#   }
-
-# function CurrentTime(sep = ":"){
-#     TIME = new Date();
-#     var hrs = TIME.getHours() + 1,
-#         min = TIME.getMinutes() + 1,
-#         sec = TIME.getSeconds() + 1;
-
-#     if (hrs<10) hrs = "0" + hrs;
-#     if (min<10) min = "0" + min;
-#     if (sec<10) sec = "0" + sec;
-
-#     return a = hrs + sep + min + sep + sec;
-#   }
-
-# document.write(CurrentDate() + "</br>");
-# document.write(CurrentDate("-") + "</br>");
-# document.write(CurrentDate(undefined, 0) + "</br>");
-# document.write("</br>");
-
-# document.write(CurrentTime() + "</br>");
-# document.write(CurrentTime("-") + "</br>");
-#   </script>
-# </body>
-# </html>
-#
-# datetime.year
-# Between MINYEAR and MAXYEAR inclusive.
-
-# datetime.month
-# Between 1 and 12 inclusive.
-
-# datetime.day
-# Between 1 and the number of days in the given month of the given year.
-
-# datetime.hour
-# In range(24).
-
-# datetime.minute
-# In range(60).
-
-# datetime.second
-# In range(60).
-
-# datetime.microsecond
-# In range(1000000).
+    
